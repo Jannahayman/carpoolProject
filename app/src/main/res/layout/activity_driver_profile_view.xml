@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Driver.DriverProfileView">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/MyProfile"
+        android:background="@color/appBar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/personalInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DriverDetails"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintStart_toStartOf="@+id/profilePictureImageView"
+        app:layout_constraintBottom_toTopOf="@+id/profilePictureImageView"
+        >
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/profilePictureImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profile_user"
+        app:layout_constraintTop_toBottomOf="@id/personalInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/profileDetailsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/personalInfo"
+        app:layout_constraintStart_toEndOf="@+id/profilePictureImageView"
+
+>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="John Wick"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/mobileLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/nameTextView"
+            app:layout_constraintStart_toEndOf="@id/profilePictureImageView"
+            android:layout_marginTop="16dp">
+
+            <!-- "Mobile:" label -->
+            <TextView
+                android:id="@+id/mobileLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile: "
+                />
+
+            <!-- Mobile number value -->
+            <TextView
+                android:id="@+id/mobileValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/mobileLayout"
+            app:layout_constraintStart_toEndOf="@id/profilePictureImageView"
+            android:layout_marginTop="8dp">
+
+            <!-- "Email:" label -->
+            <TextView
+                android:id="@+id/emailLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                />
+
+            <!-- Email value -->
+            <TextView
+                android:id="@+id/emailValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <!-- Number of Total Trips -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/mobileLayout"
+            app:layout_constraintStart_toEndOf="@id/profilePictureImageView"
+            android:layout_marginTop="8dp">
+
+            <!-- "Email:" label -->
+            <TextView
+                android:id="@+id/driverAgeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age: "
+                />
+
+            <!-- Email value -->
+            <TextView
+                android:id="@+id/driverAgeValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/vehicleInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CarDetails"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/profilePictureImageView"
+        app:layout_constraintTop_toBottomOf="@+id/profileDetailsLayout"
+        >
+    </TextView>
+    <ImageView
+        android:id="@+id/carPictureImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/car_image"
+        app:layout_constraintTop_toBottomOf="@+id/vehicleInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/carDetailsLayout"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/vehicleInfo"
+        app:layout_constraintStart_toEndOf="@+id/carPictureImageView"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/carModel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Toyota Corolla "
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/mobileLayout"
+            app:layout_constraintStart_toEndOf="@id/profilePictureImageView"
+            android:layout_marginTop="8dp">
+
+            <!-- "Email:" label -->
+            <TextView
+                android:id="@+id/carPlateNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plate: "
+                />
+
+            <!-- Email value -->
+            <TextView
+                android:id="@+id/carPlateNumberValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/mobileLayout"
+            app:layout_constraintStart_toEndOf="@id/profilePictureImageView"
+            android:layout_marginTop="8dp">
+
+            <!-- "Email:" label -->
+            <TextView
+                android:id="@+id/carColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color: "
+                />
+
+            <!-- Email value -->
+            <TextView
+                android:id="@+id/carColorValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/logOutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:backgroundTint="@color/appBar"
+        android:layout_marginHorizontal="100dp"
+        app:layout_constraintTop_toBottomOf="@id/carDetailsLayout"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout03"
+       />
+    <LinearLayout
+        android:id="@+id/linearLayout03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/appBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+        <Button
+            android:id="@+id/mainBtn01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/btn01"/>
+
+        <Button
+            android:id="@+id/activitiesBtn01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/btn02"/>
+
+
+        <Button
+            android:id="@+id/profileBtn01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:backgroundTint="#FF1C2946"
+            android:gravity="center"
+
+            android:text="@string/btn04"></Button>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

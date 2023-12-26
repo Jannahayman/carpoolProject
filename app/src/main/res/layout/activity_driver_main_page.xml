@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Driver.DriverMainPage">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@color/appBar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Two columns for available rides -->
+    <LinearLayout
+        android:id="@+id/view_upper_page_fragment_home"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+>
+
+        <TextView
+            android:id="@+id/tv_welcome_fragment_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/Welcome"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/profilePictureImageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/profile_user"
+        app:layout_constraintTop_toBottomOf="@id/view_upper_page_fragment_home"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"/>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/appBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+        <Button
+            android:id="@+id/mainBtn01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:backgroundTint="#FF1C2946"
+            android:gravity="center"
+            android:text="@string/btn01"/>
+
+        <Button
+            android:id="@+id/activitiesBtn01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/btn02"/>
+
+
+        <Button
+            android:id="@+id/profileBtn01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:background="@color/transparent"
+            android:gravity="center"
+
+            android:text="@string/btn04"></Button>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/createRidebtn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/button"
+        android:paddingVertical="20dp"
+android:layout_marginBottom="50dp"
+        android:textSize="18dp"
+        android:text="@string/create_ride"
+        app:layout_constraintTop_toBottomOf="@+id/profilePictureImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintBottom_toTopOf="@id/linearLayout03"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

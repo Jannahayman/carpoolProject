@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Carpool ASU</string>
+    <string name="Welcome">Welcome</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Password02">Re-enter password</string>
+    <string name="SignUpQuestion">Do not have an account?</string>
+    <string name="Signup">Sign Up!</string>
+    <string name="LogInPassenger">Log in as passenger</string>
+    <string name="LogInDriver">Log in as driver</string>
+    <string name="LogIn">Log in </string>
+    <string name="SignUp">Sign up</string>
+    <string name="AvailableRides">Rides</string>
+    <string name="RideRequests">Ride Requests</string>
+    <string name="MorningRides">7:30 AM rides</string>
+    <string name="EveningRides">5:30 AM rides</string>
+    <string name="MyProfile">Profile</string>
+    <string name="DeleteAccount">Delete Account</string>
+    <string name="logout">Log Out</string>
+    <string name="PassengerLogin">Passenger Login</string>
+    <string name="DriverLogin">Driver Login</string>
+    <string name="PassengerSignup">Passenger Sign Up</string>
+    <string name="DriverSignup">Driver Sign Up</string>
+    <string name="Accept">Accept</string>
+    <string name="Reject">Reject</string>
+
+
+    <string name="RideDetails">Ride Details</string>
+    <string name="BookRide">Book Spot</string>
+    <string name="CarDetails">Vehicle information</string>
+    <string name="DriverDetails">Personal information</string>
+    <string name="PaymentDetails">Request is sent to driver!</string>
+    <string name="carModel">Car Model</string>
+    <string name="col1">Route</string>
+    <string name="col2">Date</string>
+    <string name="col3">Time</string>
+    <string name="col4">Status</string>
+    <string name="col5">fees</string>
+    <string name="btn01">Main</string>
+    <string name="btn02">Activities</string>
+    <string name="btn03">Status</string>
+    <string name="btn04">Profile</string>
+    <string name="activities">Activities</string>
+    <string name="Done">Done</string>
+    <string name="book_now">Book trip</string>
+    <string name="chooese_ride">Choose your ride</string>
+    <string name="offer_ride">Offer your ride</string>
+    <string name="create_ride">Create ride</string>
+    <string name="offer">Offer ride</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

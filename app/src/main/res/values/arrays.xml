@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="time_options">
+        <item>7:30 AM</item>
+        <item>5:30 PM</item>
+    </string-array>
+    <string-array name="time_options_without_7_30_am">
+        <item>5:30 PM</item>
+    </string-array>
+
+    <string-array name="area_options">
+        <item>Nasr City</item>
+        <item>Heliopolis</item>
+        <item>New Cairo</item>
+        <item>Abbaseya </item>
+    </string-array>
+
+    <string-array name="pickup_areas_morning">
+        <item>Nasr City</item>
+        <item>Heliopolis</item>
+        <item>New Cairo</item>
+        <item>Abbaseya </item>
+    </string-array>
+
+    <string-array name="dropoff_areas_morning">
+        <item>Gate 3</item>
+        <item>Gate 4</item>
+    </string-array>
+
+    <string-array name="pickup_areas_evening">
+        <item>Gate 3</item>
+        <item>Gate 4</item>
+    </string-array>
+
+    <string-array name="dropoff_areas_evening">
+        <item>Nasr City</item>
+        <item>Heliopolis</item>
+        <item>New Cairo</item>
+        <item>Abbaseya </item>
+    </string-array>
+</resources>

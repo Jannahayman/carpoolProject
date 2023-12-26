@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:color="@color/appBar"
+        android:width="2dp" />
+    <solid
+        android:color="@color/appBar"/>
+    <corners android:radius="13dp" />
+</shape>
